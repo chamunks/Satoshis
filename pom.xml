@@ -4,7 +4,7 @@
 	<groupId>me.meta1203.plugins.satoshis</groupId>
 	<artifactId>Satoshis</artifactId>
 	<version>1.0</version>
-	<name>Satoshis</name>
+	<name>Satoshis-Spigot</name>
 	<url>http://www.metaserve.net/</url>
 	<build>
 		<plugins>
