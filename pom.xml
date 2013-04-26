@@ -23,6 +23,7 @@
 								<excludes>
 									<exclude>*:bukkit</exclude>
 									<exclude>*:Vault</exclude>
+									<exclude>*:guava</exclude>
 								</excludes>
 							</artifactSet>
 							<filters>
