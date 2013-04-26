@@ -4,10 +4,30 @@
 	<groupId>me.meta1203.plugins.satoshis</groupId>
 	<artifactId>Satoshis</artifactId>
 	<version>1.0</version>
-	<name>Satoshis-Spigot</name>
+	<name>Satoshis</name>
 	<url>http://www.metaserve.net/</url>
 	<build>
+		<finalName>Satoshis-Spigot</finalName>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.3.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>done</goal>
+						</goals>
+						<phase>shade</phase>
+						<configuration>
+							<file>${project.build.finalName}.${project.packaging}</file>
+							<generatePom>false</generatePom>
+							<pomFile>pom.xml</pomFile>
+							<version>${project.version}</version>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
